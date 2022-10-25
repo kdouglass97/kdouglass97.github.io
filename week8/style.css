@@ -9,7 +9,7 @@
 .text {
     text-align: center;
     animation-name: hallo;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
 @keyframes hallo{
@@ -87,7 +87,7 @@ img {
 }
 .middle img:hover{
     animation-name: spidey;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 @keyframes spidey {
     0%{
