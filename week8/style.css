@@ -1,0 +1,132 @@
+/*flexbox set styling*/
+.halloween {
+    font-size: 600%;
+    color: eb6123;
+    font-family: american typewriter;
+    background-color: darkslategrey;
+}
+
+.text {
+    text-align: center;
+    animation-name: hallo;
+    animation-duration: 5s;
+}
+
+@keyframes hallo{
+    0%{
+        transform: translateX(-10vw);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+}
+
+.text:hover{
+    color: black;
+    font-weight: lighter;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: auto;
+    
+}
+
+.jack {
+    height: 100vh;
+    background-color: darkslategrey;
+  }
+
+.jack:hover {
+    background-color: red;
+}
+
+/*size of the images*/
+img {
+      width:100%;
+      height: 25%vh;
+  }
+
+/*controls what the pumpkins do on hover*/
+.left img{
+    transform: scale(.8);
+}
+.left img:hover{
+    transform: scale(.8);
+    animation-name: skew;
+    animation-duration: .5s;
+}
+
+@keyframes skew {
+    0%{
+        transform: skewX(20deg);
+        transform: skewY(0deg);
+    }
+    12.5%{
+        transform: skewX(20deg);
+        transform: skewY(20deg);
+    }
+    25%{
+        transform: skewX(-20deg);
+        transform: skewY(-20deg);
+    }
+    50%{
+        transform: skewX(20deg);
+        transform: skewY(20deg);
+    }
+    75%{
+        transform: skewX(-20deg);
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewX(0deg);
+        transform: skewY(0deg);
+    }
+}
+.middle img:hover{
+    animation-name: spidey;
+    animation-duration: 5s;
+}
+@keyframes spidey {
+    0%{
+        transform: translateY(0vh);
+    }
+    15%{
+        transform: translateY(10vh);
+    }
+    45%{
+        transform: translateY(-30vh);
+    }
+    65%{
+        transform: translateY(40vh);
+    }
+    100%{
+        transform: translateY(-90vh);
+    }
+}
+
+
+.right img:hover{
+    animation-name: rotate;
+    animation-duration: .8s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100% { 
+        transform: rotate(0deg);
+    }
+}
