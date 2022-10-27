@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "starry_night";
+    src: url(assets/title_font/starrynight.otf);
+}
+
+body {
+    background-color: #203354;
+}
+
+h1 {
+    font-family: 'starry_night';
+    color: #FFFFF0;
+}
+
+.title {
+    position: fixed;
+    top: 20px;
+    left: 625px;
+}
+
+p {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 10px;
+    src: url(https://fonts.gstatic.com/s/arimo/v24/P5sMzZCDf9_T_10UxCFuj5-v6dg.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+.image-container {
+    display: flex;
+    margin-left: 10vw;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 200px;
+
+}
+
+.image-row1 {}
+
+.image-row2 {}
+
+img {
+    padding-top: 10px;
+    width: 350px;
+    height: 200px;
+}
+
+}
