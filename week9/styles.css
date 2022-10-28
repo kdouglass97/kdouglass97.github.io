@@ -13,9 +13,12 @@ h1 {
 }
 
 .title {
+    display: flex;
+    justify-content: center;
     position: fixed;
-    top: 20px;
-    left: 625px;
+    top: 40px;
+    left: 0px;
+    width: 100vw;
 }
 
 p {
@@ -31,9 +34,9 @@ p {
 .image-container {
     display: flex;
     margin-left: 10vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 125px;
 
 }
 
@@ -45,4 +48,71 @@ img {
     padding-top: 10px;
     width: 350px;
     height: 200px;
+}
+
+@media screen and (min-width: 600px) {
+    @font-face {
+        font-family: "starry_night";
+        src: url(assets/title_font/starrynight.otf);
+    }
+
+    body {
+        background-color: #203354;
+    }
+
+    h1 {
+        font-family: 'starry_night';
+        color: #FFFFF0;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 40px;
+        left: 0px;
+        width: 100vw;
+    }
+
+    p {
+        font-family: 'Arimo';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        font-size: 10px;
+        src: url(https://fonts.gstatic.com/s/arimo/v24/P5sMzZCDf9_T_10UxCFuj5-v6dg.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    .image-container {
+        display: flex;
+        margin-left: 5vw;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-top: 125px;
+
+    }
+
+    .image-row1 {}
+
+    .image-row2 {}
+
+    img {
+        padding-top: 10px;
+        width: 350px;
+        height: 200px;
+    }
+
+    .item {
+        transition: transform .4s;
+        transition-timing-function: all 1s ease-in;
+    }
+
+    .item:hover {
+        -ms-transform: scale(1.05);
+        /* IE 9 */
+        -webkit-transform: scale(1.05);
+        /* Safari 3-8 */
+        transform: scale(1.05);
+    }
 }
