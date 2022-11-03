@@ -46,3 +46,95 @@ img {
     width: 350px;
     height: 200px;
 }
+
+.response_title{
+    text-align: center;
+}
+
+/*centers the night sky */
+.creative_response{
+    display: flex;
+    justify-content: center;
+}
+ 
+.night_sky{
+    width: 80vw;
+    height: 60vh;
+    background-color: black;
+    border-radius: 8%;
+
+}
+
+/*basic star*/
+.circle{
+    background-color: rgb(184, 184, 237);
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vh;
+}
+
+.circle:hover{
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vh;
+}
+
+/*allows the for the pop up text*/
+.tooltip {
+    text-align: center;
+    color: rgb(184, 184, 237);
+    width: auto;
+    height: auto;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  } 
+
+.not_circle{
+    background-color: black;
+    border-radius: 50%;
+    width: 6vw;
+    height: 6vh;
+}
+
+.row_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}  
+
+.row_2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row_3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}  
+
+.row_4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ 
