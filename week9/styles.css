@@ -3,6 +3,8 @@
     src: url(assets/title_font/starrynight.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     background-color: #203354;
 }
@@ -13,9 +15,47 @@ h1 {
 }
 
 .title {
+    display: flex;
+    justify-content: center;
     position: fixed;
-    top: 20px;
-    left: 625px;
+    top: 40px;
+    left: 0px;
+    width: 100vw;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0.1;
+    left: 0;
+
+}
+
+.nav>.nav-links {
+    text-align: left;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/arimo/v24/P5sMzZCDf9_T_10UxCFuj5-v6dg.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    display: inline;
+    float: right;
+    font-size: 16px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: white;
+    /* work/p5js/about color */
+}
+
+.nav>.nav-links>a:hover {
+    text-decoration: underline;
 }
 
 p {
@@ -31,9 +71,9 @@ p {
 .image-container {
     display: flex;
     margin-left: 10vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
 
 }
 
@@ -42,7 +82,7 @@ p {
 .image-row2 {}
 
 img {
-    padding-top: 10px;
+    padding-top: 100px;
     width: 350px;
     height: 200px;
 }
