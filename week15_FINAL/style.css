@@ -247,7 +247,7 @@
 }
 
 .sword{
-    width: 50vw;
+    width: 40vw;
     height: auto;
     margin-left: 40vw;
     margin-top: 20vh;
@@ -259,7 +259,7 @@
 }
 
 .coral{
-    width: 30vw;
+    width: 20vw;
     height: auto;
     margin-left: 10vw;
     margin-top: 10vh;
@@ -273,11 +273,23 @@
 .plankton{
     width: 40vw;
     height: auto;
-    margin-left: 50vw;
+    margin-left: 40vw;
     margin-top: 10vh;
     border-radius: 10%;
 }
 
 .plankton:hover{
+    transform: scale(1.25);  
+}
+
+.angler_real{
+    width: 40vw;
+    height: auto;
+    margin-left: 40vw;
+    margin-top: 10vh;
+    border-radius: 10%;  
+}
+
+.angler_real:hover{
     transform: scale(1.25);  
 }
