@@ -1,0 +1,283 @@
+/*creating ocean gradient*/
+.oceanLayer{
+
+    background-image: linear-gradient(deepskyblue, darkslateblue, black);
+
+    width: vw;
+    height: 600vh;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*ocean wall color & shape*/
+.oceanWall-left{
+    width: 50vw;
+    height: 400vh;
+
+    background: rgb(255,154,0);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+    z-index: 2;
+}
+
+.oceanWall-right{
+    width: 100vw;
+    height: 400vh;
+
+    background: rgb(255,154,0);
+    clip-path: polygon(100% 0%, 50% 100%, 100% 100%);
+
+}
+
+/*periscop + button*/
+.periscope{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: auto;
+}
+.periscope:hover{
+    transform: scale(1.25);
+    animation-name: periscope;
+    animation-duration: 750ms;
+  }
+
+  @keyframes periscope {
+    0%{
+    }
+    25%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    75%{
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(-15deg);
+
+    }
+  }
+
+
+.submarine{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: auto;
+    /*how to cropped corners?*/
+    border-radius: 20vw;
+}
+.opener{
+    display: flex;
+    margin-left: 40vw;
+    justify-content: center;
+    z-index: 2; 
+    position: relative;
+
+}
+
+/*buttons & IDs*/
+#periperi{
+    display: flex;
+}
+
+#subsub{
+    display: flex;
+}
+
+/*marker to separate ocean-depth zones*/
+.marker{
+    font-size: 2em;
+    color: gainsboro;
+    z-index: 3;
+}
+
+.marker:hover{
+    color: white;
+    font-size: 3em;
+}
+
+.markerLine{
+    background-color: white;
+
+    height: .5vh;
+    width: 100vw;
+    z-index: 3;
+}
+
+.markerLine:hover{
+    background-color: black;
+
+    height: 1vh;
+}
+
+/*allows the for the pop up text*/
+.tooltip {
+    text-align: left;
+    color: gainsboro;
+    font-size: 4em;
+    height: auto;
+  }
+
+  .tooltip:hover{
+    color: white;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    font-size: .5em;
+    width: auto;
+    height: auto;
+    color: #fff;
+    text-align: left;
+    background-color: slategray;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  } 
+
+  /*fishes*/
+.imagebox{
+    display: flex;
+    flex-direction: row;
+}
+  .angler{
+    display: flex;
+    justify-content: right;
+    margin-left: 50vw;
+    margin-top: 10vw;
+    width: 30vh;
+    height: auto;
+  }
+
+  .angler:hover{
+    animation-name: angler;
+    animation-duration: 1s;
+    border-width: 1em;
+    border-color: white;
+  }
+
+  @keyframes angler {
+    0%{
+    }
+    25%{
+        transform: translate(0,-5vh);
+    }
+    50%{
+        transform: translate(0,10vh);
+    }
+    75%{
+        transform: translate(0,-5h);
+    }
+    100%{
+        transform: scale(2);
+
+    }
+  }
+
+  .basket{
+    width: 40vw;
+    height: auto;
+    margin-left: 30vw;
+    margin-top: 20vh;
+    border-radius: 25%;
+  }
+
+  .basket:hover{
+    transform: scale(1.25);
+  }
+
+  .tripod{
+    width: 40vw;
+    height: auto;
+    margin-left: 10vw;
+    margin-top: 20vh;
+    border-radius: 10%;
+  }
+
+  .tripod:hover{
+    transform: scale(1.25);
+  }
+
+  .viper{
+    width: 40vw;
+    height: auto;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    border-radius: 10%;
+  }
+
+.viper:hover{
+    transform: scale(1.25);
+}
+
+.vampire{
+    width: 40vw;
+    height: auto;
+    margin-left: 40vw;
+    margin-top: 20vh;
+    border-radius: 10%;
+}
+
+.vampire:hover{
+    transform: scale(1.25);
+}
+
+.siphon{
+    width: 40vw;
+    height: auto;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    border-radius: 10%;
+}
+
+.siphon:hover{
+    transform: scale(1.25);
+}
+
+.sword{
+    width: 50vw;
+    height: auto;
+    margin-left: 40vw;
+    margin-top: 20vh;
+    border-radius: 10%;
+}
+
+.sword:hover{
+    transform: scale(1.25);  
+}
+
+.coral{
+    width: 30vw;
+    height: auto;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    border-radius: 10%;
+}
+
+.coral:hover{
+    transform: scale(1.25);  
+}
+
+.plankton{
+    width: 40vw;
+    height: auto;
+    margin-left: 50vw;
+    margin-top: 10vh;
+    border-radius: 10%;
+}
+
+.plankton:hover{
+    transform: scale(1.25);  
+}
