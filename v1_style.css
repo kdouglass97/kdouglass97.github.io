@@ -1,0 +1,64 @@
+@font-face {
+	font-family: "receipt";
+	src: url("Merchant_Copy.ttf") format("truetype");
+  }
+  
+body{
+    background-color: aquamarine;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    height: 10vh;
+	background-color:teal;
+}
+
+#theWeeks {
+    display: flex;
+    flex-direction:column;
+    background-color:teal;
+	border-radius: 50px;
+	margin: 3vh;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
+}
+
+#theWeeks section {
+	background-color: green; /*what does this change?*/
+	text-align: center;
+	padding: 2vw;
+	margin: 2vh;
+	background-color:pink; /*this is each week bt*/
+	border-radius: 50px;
+	width: 200px
+}
+
+#theWeeks a {
+	font-size: 36px;
+}
+
+#theWeeks a:hover{
+	color: black;
+    font-size: 30px;
+}
+
+.thisItem a {
+	font-weight: bold;
+	font-size: 36px;
+	color:black;
+	padding: 2vw;
+	text-decoration: none;
+}
+
+.thisItem a:visited {
+	color: white; /* this affects the h1*/
+}
+.thisItem a:hover { /* this too affects the h1*/
+	color: pink;
+	font-size: 50px;
+}

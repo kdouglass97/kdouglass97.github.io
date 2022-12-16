@@ -1,59 +1,74 @@
-body{
-    background-color: aquamarine;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+@font-face {
+	font-family: "receipt";
+	src: url("Merchant_Copy.ttf") format("truetype");
+  }
+
+  @font-face {
+	font-family: "receipt_big";
+	src: url("Merchant_Copy_Doublesize.ttf") format("truetype");
+  }
+
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-nav {
+.box_box{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: sans-serif;
-    height: 10vh;
-	background-color:teal;
+    justify-content: center;
 }
 
-#theWeeks {
+.center_box{
+    width: 60vw;
+    height: 100vh;
+    background-image: url(wrinkle_paper.jpeg);
+}
+
+.title{
     display: flex;
-    flex-direction:column;
-    background-color:teal;
-	border-radius: 50px;
-	margin: 3vh;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50vw;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+
+    font-size: 4em;
+    font-family: receipt_big;
 }
 
-#theWeeks section {
-	background-color: green; /*what does this change?*/
-	text-align: center;
-	padding: 2vw;
-	margin: 2vh;
-	background-color:pink; /*this is each week bt*/
-	border-radius: 50px;
-	width: 200px
+.name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-family: receipt_big;
 }
 
-#theWeeks a {
-	font-size: 36px;
+.weekly{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 5vw;
+    
+    font-family: receipt;
 }
 
-#theWeeks a:hover{
-	color: black;
-    font-size: 30px;
+.weekly_text{
+    font-size: 4em;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
-.thisItem a {
-	font-weight: bold;
-	font-size: 36px;
-	color:black;
-	padding: 2vw;
-	text-decoration: none;
-}
-
-.thisItem a:visited {
-	color: white; /* this affects the h1*/
-}
-.thisItem a:hover { /* this too affects the h1*/
-	color: pink;
-	font-size: 50px;
+.weekly_text:hover{
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
